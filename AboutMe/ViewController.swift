@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let name = "Eko Teguh Widodo"
+    let hometown = "Bandar Lampung"
+    let favoriteColor = "Green"
+    let favoriteFood = "Mie Ayam Bakso"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print("Hello, my name is " + name + "\nI live in " + hometown + "\nMy favorite color is " + favoriteColor + "\nMy favorite food is " + favoriteFood)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
