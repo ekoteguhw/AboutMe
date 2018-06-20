@@ -20,5 +20,12 @@ class ViewController: UIViewController {
         
         print("Hello, my name is " + name + "\nI live in " + hometown + "\nMy favorite color is " + favoriteColor + "\nMy favorite food is " + favoriteFood)
     }
+
+    @IBOutlet weak var textView: UITextView!
+    
+    @IBAction func showAboutMe(_ sender: Any) {
+        textView.text = "Hello, my name is " + name + "\nI live in " + hometown + "\nMy favorite color is " + favoriteColor + "\nMy favorite food is " + favoriteFood
+    }
+    
 }
 

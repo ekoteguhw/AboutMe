@@ -22,6 +22,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpQ-ZQ-HPP">
                                 <rect key="frame" x="115" y="113" width="91" height="30"/>
                                 <state key="normal" title="Introduce Me"/>
+                                <connections>
+                                    <action selector="showAboutMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3h-l6-gkN"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ugW-dd-7y5">
                                 <rect key="frame" x="16" y="172" width="288" height="178"/>
@@ -41,6 +44,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="ugW-dd-7y5" id="m9R-38-UUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
